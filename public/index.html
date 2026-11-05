@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Quán trà đá</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  html, body { margin: 0; height: 100%; background: #111; overflow: hidden; font-family: "Segoe UI", sans-serif; }
+  #stage { position: relative; width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; }
+  canvas { height: 100%; max-width: 100%; aspect-ratio: 9 / 16; background: transparent; }
+  #panel { position: fixed; right: 8px; bottom: 8px; width: 250px; background: rgba(20,20,20,.88); color: #eee; padding: 10px; border-radius: 8px; font-size: 13px; }
+  #panel h4 { margin: 0 0 6px; font-size: 13px; }
+  #panel button, #panel input, #panel select { font: inherit; margin: 2px 2px 2px 0; }
+  #panel button { cursor: pointer; padding: 3px 7px; }
+  #panel input { width: 130px; }
+  #status { margin-top: 6px; color: #9c9; font-size: 12px; }
+  body.overlay #panel { display: none; }
+</style>
+</head>
+<body>
+<div id="stage"><canvas id="c" width="720" height="1280"></canvas></div>
+<div id="panel">
+  <h4>Giả lập (ẩn bằng ?overlay=1)</h4>
+  <div><button id="bJoin">+ 1 người vào</button><button id="bJoin10">+ 10</button></div>
+  <div><input id="chatText" value="!trada"><button id="bChat">Chat</button></div>
+  <div id="menuBtns"></div>
+  <div>
+    <button id="bLike">Like</button>
+    <select id="gDia"><option value="1">1 💎</option><option value="5">5 💎</option><option value="30">30 💎</option><option value="100">100 💎 (VIP)</option></select>
+    <button id="bGift">Quà</button>
+  </div>
+  <div id="status">…</div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>

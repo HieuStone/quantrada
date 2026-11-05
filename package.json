@@ -1,0 +1,17 @@
+{
+  "name": "quan-tra-da",
+  "version": "1.0.0",
+  "description": "Quán trà đá vỉa hè cho TikTok LIVE",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "tiktok-live-connector": "^2.5.0",
+    "ws": "^8.22.1"
+  }
+}
